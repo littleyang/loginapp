@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LoginApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_name">your login name</string>
+    <string name="login_password">your password</string>
+    <string name="login_button">login</string>
+    <string name="register_button">register</string>
+    <string name="title_activity_register">Register</string>
+    <string name="login_success">Hello,You Have Login Successfully</string>
+    <string name="register_success">Hello,You have register successfully</string>
+    <string name="title_activity_login_success">LoginSuccess</string>
+    <string name="title_activity_register_success">RegisterSuccess</string>
+
+</resources>

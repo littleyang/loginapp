@@ -1,0 +1,38 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:paddingBottom="10dp"
+        android:hint="@string/login_name"
+        />
+    
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/login_password"
+        />
+    
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/login_button"
+        android:onClick="loginToApp"
+        />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/register_button"
+        android:onClick="registerApp"
+        />
+
+    </LinearLayout>
