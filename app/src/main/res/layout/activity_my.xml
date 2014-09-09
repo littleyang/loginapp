@@ -1,12 +1,15 @@
 <LinearLayout
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <EditText
         android:id="@+id/user_name"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingBottom="10dp"
         android:hint="@string/login_name"
@@ -14,25 +17,37 @@
     
     <EditText
         android:id="@+id/user_password"
-        android:layout_width="300dp"
+        android:password="true"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="@string/login_password"
         />
     
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="@string/login_button"
-        android:onClick="loginToApp"
-        />
 
-    <Button
-        android:id="@+id/register_button"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
-        android:text="@string/register_button"
-        android:onClick="registerApp"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:paddingLeft="140dp"
+        android:paddingRight="1dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_button"
+            android:layout_gravity="right"
+            android:onClick="loginToApp"
+            />
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="100dp"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:text="@string/register_button"
+            android:onClick="registerApp"
+            />
+        </LinearLayout>
+
 
     </LinearLayout>
