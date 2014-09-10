@@ -13,5 +13,9 @@
     <string name="register_success">Hello,You have register successfully</string>
     <string name="title_activity_login_success">LoginSuccess</string>
     <string name="title_activity_register_success">RegisterSuccess</string>
+    <string name="message_to">Email</string>
+    <string name="message_subject">Subject</string>
+    <string name="message_content">Content</string>
+    <string name="message_phone">Phone</string>
 
 </resources>

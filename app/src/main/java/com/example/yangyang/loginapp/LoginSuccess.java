@@ -13,14 +13,14 @@ public class LoginSuccess extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_login_success);
-        Intent intent = getIntent();
-        String userName = intent.getStringExtra(MyActivity.USERNAME);
-        String passWord = intent.getStringExtra(MyActivity.PASSWORD);
-        TextView view = new TextView(this);
-        view.setTextSize(120);
-        view.setText("hi,your name is " + userName + "and Your password is " + passWord);
-        setContentView(view);
+        setContentView(R.layout.activity_login_success);
+        //Intent intent = getIntent();
+        //String userName = intent.getStringExtra(MyActivity.USERNAME);
+        //String passWord = intent.getStringExtra(MyActivity.PASSWORD);
+        //TextView view = new TextView(this);
+        //view.setTextSize(20);
+        //view.setText("hi,your name is " + userName + "and Your password is " + passWord);
+        //setContentView(view);
     }
 
 

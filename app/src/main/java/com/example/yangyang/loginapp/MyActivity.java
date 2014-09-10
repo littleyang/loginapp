@@ -53,6 +53,7 @@ public class MyActivity extends Activity {
     }
 
     public void registerApp(View view){
-
+        Intent intent = new Intent(this,Register.class);
+        startActivity(intent);
     }
 }
