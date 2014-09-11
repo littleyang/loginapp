@@ -1,6 +1,7 @@
 package com.example.yangyang.loginapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -44,6 +45,9 @@ public class Register extends Activity {
     }
 
     public void saveDoneAction(View view){
+
+        Intent intent = new Intent(this,RegisterSuccess.class);
+        startActivity(intent);
 
     }
 }

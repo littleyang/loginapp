@@ -17,5 +17,10 @@
     <string name="message_subject">Subject</string>
     <string name="message_content">Content</string>
     <string name="message_phone">Phone</string>
+    <string name="check_meat">Meat</string>
+    <string name="check_cheese">Cheese</string>
+    <string name="check_fruits">Fruits</string>
+    <string name="pirates">Pirates</string>
+    <string name="ninjas">Ninjas</string>
 
 </resources>
