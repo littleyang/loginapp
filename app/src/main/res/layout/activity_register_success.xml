@@ -81,9 +81,19 @@
             android:layout_height="wrap_content"
             android:text="@string/pick_time"
             android:onClick="showTimePickerDialog"
+            android:layout_marginBottom="32dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="32dp" />
+            android:layout_marginLeft="35dp" />
+
+        <Button
+            android:id="@+id/date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_date"
+            android:onClick="showDatePickerDialog"
+            android:layout_alignTop="@+id/time_picker"
+            android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

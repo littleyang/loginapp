@@ -23,6 +23,7 @@
     <string name="pirates">Pirates</string>
     <string name="ninjas">Ninjas</string>
     <string name="pick_time">Time</string>
+    <string name="pick_date">Date</string>
 
     <string-array name="planets_array">
         <item>Mercury</item>
