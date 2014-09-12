@@ -64,8 +64,6 @@
                     android:onClick="onRadioButtonClicked"/>
                 </RadioGroup>
 
-
-
             </LinearLayout>
             <Spinner
                 android:id="@+id/planets_spinner"
