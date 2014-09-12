@@ -22,5 +22,17 @@
     <string name="check_fruits">Fruits</string>
     <string name="pirates">Pirates</string>
     <string name="ninjas">Ninjas</string>
+    <string name="pick_time">Time</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 
 </resources>

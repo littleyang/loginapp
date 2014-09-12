@@ -63,7 +63,27 @@
                     android:layout_marginLeft="50dp"
                     android:onClick="onRadioButtonClicked"/>
                 </RadioGroup>
+
+
+
             </LinearLayout>
+            <Spinner
+                android:id="@+id/planets_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                />
+
+        <Button
+            android:id="@+id/time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_time"
+            android:onClick="showTimePickerDialog"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="32dp" />
 
 
 </RelativeLayout>

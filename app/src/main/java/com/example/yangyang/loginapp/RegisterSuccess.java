@@ -2,20 +2,29 @@ package com.example.yangyang.loginapp;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DialogFragment;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 
 
-public class RegisterSuccess extends Activity {
+public class RegisterSuccess extends Activity implements AdapterView.OnItemSelectedListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_success);
+        Spinner spiner = (Spinner)findViewById(R.id.planets_spinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.planets_array,android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spiner.setAdapter(adapter);
+        spiner.setOnItemSelectedListener(this);
     }
 
 
@@ -86,5 +95,23 @@ public class RegisterSuccess extends Activity {
                 }
                 break;
         }
+    }
+
+
+    @Override
+    public void onItemSelected(AdapterView<?> adapterView, View view, int pos, long id) {
+        AlertDialog.Builder bundle = new AlertDialog.Builder(this);
+        bundle.setMessage("you have select  " + id + " ! thank you");
+        bundle.show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+
+    }
+
+    public void showTimePickerDialog(View v) {
+        DialogFragment newFragment = new TimePickerFragment();
+        newFragment.show(getFragmentManager(), "timePicker");
     }
 }
