@@ -5,4 +5,18 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never" />
+
+    <item android:id="@+id/action_login"
+        android:title="Login"
+        android:orderInCategory="101"
+        />
+
+    <item android:id="@+id/action_register"
+        android:title="Register"
+        android:orderInCategory="102"/>
+
+    <item android:id="@+id/action_help"
+        android:title="Help"
+        android:orderInCategory="103"
+        android:showAsAction="ifRoom"/>
 </menu>
