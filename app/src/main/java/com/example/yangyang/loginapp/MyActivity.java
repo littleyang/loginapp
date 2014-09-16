@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.*;
 
 
 public class MyActivity extends Activity {
@@ -54,6 +54,11 @@ public class MyActivity extends Activity {
 
     public void registerApp(View view){
         Intent intent = new Intent(this,Register.class);
+        startActivity(intent);
+    }
+
+    public void showList(View view){
+        Intent intent = new Intent(this,PopListView.class);
         startActivity(intent);
     }
 }

@@ -28,6 +28,10 @@
             android:name=".RegisterSuccess"
             android:label="@string/title_activity_register_success" >
         </activity>
+        <activity
+            android:name=".PopListView"
+            android:label="@string/title_activity_list_view" >
+        </activity>
     </application>
 
 </manifest>

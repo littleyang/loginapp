@@ -38,5 +38,12 @@
 
     <string name="menu_remove">Remove</string>
     <string name="content_open_popup">Open Popup Menu</string>
+    <string name="title_activity_list_view">ListView</string>
+    <string name="intro_message">
+        <![CDATA[
+            This sample shows you how to use {@link PopupMenu}
+            from ActionBarCompat to create a list, with each item having a dropdown menu.
+        ]]>
+    </string>
 
 </resources>
