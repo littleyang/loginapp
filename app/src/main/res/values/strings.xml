@@ -24,6 +24,9 @@
     <string name="ninjas">Ninjas</string>
     <string name="pick_time">Time</string>
     <string name="pick_date">Date</string>
+    <string name="CustomDialog">CustomDialog</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
 
     <string-array name="planets_array">
         <item>Mercury</item>
