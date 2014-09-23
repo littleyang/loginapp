@@ -53,5 +53,6 @@
     <string name="dialog_message">Dialog_Message</string>
     <string name="dialog_title">Dialog Title</string>
     <string name="ok_button">Ok</string>
+    <string name="multi_choice">Multi Choice</string>
 
 </resources>

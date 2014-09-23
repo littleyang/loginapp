@@ -11,4 +11,16 @@
         <item>Value Two</item>
         <item>Value Three</item>
     </string-array>
+    <string-array name="colors_array">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Yellow</item>
+    </string-array>
+
+    <string-array name="toppings">
+        <item>Onion</item>
+        <item>lettuce</item>
+        <item>Tomato</item>
+        <item>Green</item>
+    </string-array>
 </resources>

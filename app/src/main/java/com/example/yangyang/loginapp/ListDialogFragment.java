@@ -14,7 +14,13 @@ public class ListDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         // set title and message
-        builder.setMessage(R.string.dialog_message).setTitle(R.string.dialog_title);
+       // builder.setMessage(R.string.dialog_message).setTitle(R.string.dialog_title);
+        builder.setTitle(R.string.dialog_title).setItems(R.array.colors_array,new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+            }
+        });
 
         // set ok and cancel button
         builder.setPositiveButton(R.string.ok_button,new DialogInterface.OnClickListener() {
