@@ -27,7 +27,6 @@ public class RegisterSuccess extends Activity implements AdapterView.OnItemSelec
         spiner.setOnItemSelectedListener(this);
     }
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -77,7 +76,6 @@ public class RegisterSuccess extends Activity implements AdapterView.OnItemSelec
     public void onRadioButtonClicked(View view){
         // Is the button now checked?
         boolean checked = ((RadioButton) view).isChecked();
-
         // Check which radio button was clicked
         switch(view.getId()) {
             case R.id.radio_pirates:
@@ -96,7 +94,6 @@ public class RegisterSuccess extends Activity implements AdapterView.OnItemSelec
                 break;
         }
     }
-
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int pos, long id) {
