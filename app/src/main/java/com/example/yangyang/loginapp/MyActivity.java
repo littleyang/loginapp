@@ -1,6 +1,7 @@
 package com.example.yangyang.loginapp;
 
 import android.app.Activity;
+import android.app.DialogFragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -61,5 +62,10 @@ public class MyActivity extends Activity {
     public void showList(View view){
         Intent intent = new Intent(this,PopListView.class);
         startActivity(intent);
+    }
+
+    public void showLoginDialog(View view){
+        DialogFragment fragment = new CustomDialogByXml();
+        fragment.show(getFragmentManager(),"Login Dialog");
     }
 }

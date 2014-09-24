@@ -52,16 +52,25 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_gravity="right"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/list_button"
-            android:layout_width="158dp"
+            android:layout_width="120dp"
             android:layout_gravity="center_horizontal"
-            android:layout_height="82dp"
+            android:layout_height="50dp"
             android:text="Show List"
             android:onClick="showList"
             />
+
+        <Button
+            android:id="@+id/show_login_dialog"
+            android:text="Show Dialog"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:onClick="showLoginDialog"/>
     </LinearLayout>
 
 

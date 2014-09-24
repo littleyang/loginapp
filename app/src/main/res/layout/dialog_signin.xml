@@ -34,4 +34,17 @@
         android:layout_marginBottom="16dp"
         android:fontFamily="sans-serif"
         android:hint="@string/password"/>
+
+    <Button
+        android:id="@+id/dialog_login_button"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="Done"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right"
+        />
+
 </LinearLayout>
