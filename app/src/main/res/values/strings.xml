@@ -43,12 +43,11 @@
     <string name="content_open_popup">Open Popup Menu</string>
     <string name="title_activity_list_view">ListView</string>
     <string name="intro_message">
-        <![CDATA[
+<![CDATA[
             This sample shows you how to use {@link PopupMenu}
             from ActionBarCompat to create a list, with each item having a dropdown menu.
         ]]>
     </string>
-
     <string name="pref_syncConnectionTypes_default">Default Value</string>
     <string name="dialog_fire_missile">Fire Missile?</string>
     <string name="fire">Fire</string>
@@ -57,5 +56,6 @@
     <string name="dialog_title">Dialog Title</string>
     <string name="ok_button">Ok</string>
     <string name="multi_choice">Multi Choice</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
 
 </resources>
