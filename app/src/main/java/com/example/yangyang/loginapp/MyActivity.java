@@ -19,7 +19,7 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        getFragmentManager().beginTransaction().replace(android.R.id.content,new SettingsActivity()).commit();
+        //getFragmentManager().beginTransaction().replace(android.R.id.content,new SettingsActivity()).commit();
     }
 
 
@@ -60,8 +60,8 @@ public class MyActivity extends Activity {
     }
 
     public void showList(View view){
-        Intent intent = new Intent(this,PopListView.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this,PopListView.class);
+       // startActivity(intent);
     }
 
     public void showLoginDialog(View view){
