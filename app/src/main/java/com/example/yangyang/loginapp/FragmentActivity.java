@@ -99,26 +99,6 @@ public class FragmentActivity extends Activity implements View.OnClickListener{
         return super.onOptionsItemSelected(item);
     }
 
-    @Override
-    public void onClick(View view) {
-
-        switch (view.getId()){
-            case R.layout.messages:
-                setTabSelection(0);
-                break;
-            case R.layout.contacts:
-                setTabSelection(1);
-                break;
-            case R.layout.news:
-                setTabSelection(2);
-                break;
-            case R.layout.settings:
-                setTabSelection(3);
-                break;
-        }
-
-    }
-
     private  void initViews(){
 
         messageViewLayout = findViewById(R.id.message_layout);
@@ -142,6 +122,29 @@ public class FragmentActivity extends Activity implements View.OnClickListener{
         settingViewLayout.setOnClickListener(this);
 
     }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.layout.messages:
+                setTabSelection(0);
+                break;
+            case R.layout.contacts:
+                setTabSelection(1);
+                break;
+            case R.layout.news:
+                setTabSelection(2);
+                break;
+            case R.layout.settings:
+                setTabSelection(3);
+                break;
+            default:
+                break;
+        }
+
+    }
+
+
 
     private void setTabSelection(int index){
         // clean last status

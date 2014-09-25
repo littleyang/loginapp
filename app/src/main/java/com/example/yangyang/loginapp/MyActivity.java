@@ -60,8 +60,8 @@ public class MyActivity extends Activity {
     }
 
     public void showList(View view){
-        //Intent intent = new Intent(this,PopListView.class);
-       // startActivity(intent);
+        Intent intent = new Intent(this,PopListView.class);
+        startActivity(intent);
     }
 
     public void showLoginDialog(View view){
