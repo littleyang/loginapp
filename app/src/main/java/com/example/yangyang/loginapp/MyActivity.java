@@ -68,4 +68,10 @@ public class MyActivity extends Activity {
         DialogFragment fragment = new CustomDialogByXml();
         fragment.show(getFragmentManager(),"Login Dialog");
     }
+
+
+    public void showFragment(View view){
+        Intent intent = new Intent(this,FragmentActivity.class);
+        startActivity(intent);
+    }
 }
