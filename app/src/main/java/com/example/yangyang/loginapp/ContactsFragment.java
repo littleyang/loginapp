@@ -9,10 +9,12 @@ import android.view.ViewGroup;
 /**
  * Created by yangyang on 14-9-25.
  */
-public class MessageFragment extends Fragment {
+public class ContactsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View messageViewLayout = inflater.inflate(R.layout.messages,container,false);
-        return messageViewLayout;
+
+        View contactViewLayout = inflater.inflate(R.layout.contacts,container,false);
+        return contactViewLayout;
+
     }
 }
