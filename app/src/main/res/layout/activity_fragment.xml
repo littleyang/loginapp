@@ -16,12 +16,12 @@
         android:background="#fff" >
 
         <RelativeLayout
-            android:id="@+id/message_layout"
+            android:id="@+id/message_layouts"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" >
-
             <LinearLayout
+                android:id="@+id/message_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -45,12 +45,13 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/contacts_layout"
+            android:id="@+id/contacts_layouts"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" >
 
             <LinearLayout
+                android:id="@+id/contacts_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -74,16 +75,19 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/news_layout"
+            android:id="@+id/news_layouts"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" >
 
             <LinearLayout
+                android:id="@+id/news_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:orientation="vertical" >
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+              >
 
                 <ImageView
                     android:id="@+id/news_image"
@@ -103,12 +107,12 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/setting_layout"
+            android:id="@+id/setting_layouts"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" >
-
             <LinearLayout
+                android:id="@+id/setting_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"

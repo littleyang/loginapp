@@ -101,10 +101,10 @@ public class FragmentActivity extends Activity implements View.OnClickListener{
 
     private  void initViews(){
 
-        messageViewLayout = findViewById(R.id.message_layout);
-        contactViewLayout = findViewById(R.id.contacts_layout);
-        newsViewLayout = findViewById(R.id.news_layout);
-        settingViewLayout = findViewById(R.id.setting_layout);
+        messageViewLayout = findViewById(R.id.message_layouts);
+        contactViewLayout = findViewById(R.id.contacts_layouts);
+        newsViewLayout = findViewById(R.id.news_layouts);
+        settingViewLayout = findViewById(R.id.setting_layouts);
 
         messageImageView = (ImageView)findViewById(R.id.message_image);
         contactImageView = (ImageView)findViewById(R.id.contacts_image);
@@ -126,16 +126,16 @@ public class FragmentActivity extends Activity implements View.OnClickListener{
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.layout.messages:
+            case R.id.message_layouts:
                 setTabSelection(0);
                 break;
-            case R.layout.contacts:
+            case R.id.contacts_layouts:
                 setTabSelection(1);
                 break;
-            case R.layout.news:
+            case R.id.news_layouts:
                 setTabSelection(2);
                 break;
-            case R.layout.settings:
+            case R.id.setting_layouts:
                 setTabSelection(3);
                 break;
             default:
