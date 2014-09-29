@@ -82,10 +82,11 @@ public class MyActivity extends Activity {
 
     public void showNotification(View view){
 
+        String currentText = "Test Notification";
         Notification.Builder notificationBuilder = new Notification.Builder(this);
         notificationBuilder.setContentTitle("Fragment Notification");
         notificationBuilder.setSmallIcon(R.drawable.ic_launcher);
-        notificationBuilder.setContentText("Test Notification");
+        notificationBuilder.setContentText(currentText);
 
         // create explicit  intent for an Activity in your app
 
@@ -106,6 +107,17 @@ public class MyActivity extends Activity {
         // notification manager
         NotificationManager manager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
 
+        // notificationBuilder.addAction(null);
+
+        // update current notification
+
+//        notificationBuilder = new Notification.Builder(this);
+//        notificationBuilder.setSmallIcon(R.drawable.ic_launcher);
+//        notificationBuilder.setContentTitle("New message");
+//        notificationBuilder.setContentText("you are receive new message!!!!");
+//        int messageNumber = 0;
+//        notificationBuilder.setContentText(currentText).setNumber(messageNumber++);
+//
         manager.notify(0,notificationBuilder.build());
 
 
