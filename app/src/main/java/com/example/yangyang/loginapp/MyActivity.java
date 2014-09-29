@@ -3,6 +3,10 @@ package com.example.yangyang.loginapp;
 import android.app.Activity;
 import android.app.DialogFragment;
 import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.TaskStackBuilder;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -86,6 +90,23 @@ public class MyActivity extends Activity {
         // create explicit  intent for an Activity in your app
 
         Intent  intent = new Intent(this,FragmentActivity.class);
+
+        // The stack builder object will contain an artificial back stack for the
+        // started Activity.
+        // This ensures that navigating backward from the Activity leads out of
+        // your application to the Home screen.
+        TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
+        stackBuilder.addParentStack(FragmentActivity.class);
+        stackBuilder.addNextIntent(intent);
+
+        PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0,PendingIntent.FLAG_UPDATE_CURRENT);
+
+        notificationBuilder.setContentIntent(resultPendingIntent);
+
+        // notification manager
+        NotificationManager manager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+
+        manager.notify(0,notificationBuilder.build());
 
 
     }
