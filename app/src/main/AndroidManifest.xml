@@ -46,7 +46,12 @@
 
         <activity
             android:name=".FragmentActivity"
-            android:label="@string/title_activity_fragment" >
+            android:parentActivityName=".MyActivity"
+            android:label="@string/title_activity_fragment">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MyActivity"
+            />
         </activity>
 
     </application>

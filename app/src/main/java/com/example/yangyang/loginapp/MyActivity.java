@@ -97,7 +97,7 @@ public class MyActivity extends Activity {
         // This ensures that navigating backward from the Activity leads out of
         // your application to the Home screen.
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-        stackBuilder.addParentStack(FragmentActivity.class);
+        stackBuilder.addParentStack(this);
         stackBuilder.addNextIntent(intent);
 
         PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0,PendingIntent.FLAG_UPDATE_CURRENT);
