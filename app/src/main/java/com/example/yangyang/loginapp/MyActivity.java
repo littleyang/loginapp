@@ -2,6 +2,7 @@ package com.example.yangyang.loginapp;
 
 import android.app.Activity;
 import android.app.DialogFragment;
+import android.app.Notification;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -73,5 +74,19 @@ public class MyActivity extends Activity {
     public void showFragment(View view){
         Intent intent = new Intent(this,FragmentActivity.class);
         startActivity(intent);
+    }
+
+    public void showNotification(View view){
+
+        Notification.Builder notificationBuilder = new Notification.Builder(this);
+        notificationBuilder.setContentTitle("Fragment Notification");
+        notificationBuilder.setSmallIcon(R.drawable.ic_launcher);
+        notificationBuilder.setContentText("Test Notification");
+
+        // create explicit  intent for an Activity in your app
+
+        Intent  intent = new Intent(this,FragmentActivity.class);
+
+
     }
 }
