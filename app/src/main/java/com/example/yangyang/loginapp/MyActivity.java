@@ -119,7 +119,13 @@ public class MyActivity extends Activity {
 //        notificationBuilder.setContentText(currentText).setNumber(messageNumber++);
 //
         manager.notify(0,notificationBuilder.build());
+    }
 
+    // show drag and drop activity
+    public void showDragAndDropActivity(View view){
+
+        Intent intent = new Intent(this,DragAndDrop.class);
+        startActivity(intent);
 
     }
 }
