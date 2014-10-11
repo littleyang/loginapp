@@ -98,6 +98,31 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/drag_action"
+            android:text="Drag and Drop"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:onClick="showDragAndDropActivity"/>
+
+        <Button
+            android:id="@+id/show_drag_and_drop"
+            android:text="Show Notification"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:onClick="showNotification"/>
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
