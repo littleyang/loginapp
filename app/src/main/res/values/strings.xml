@@ -58,5 +58,6 @@
     <string name="multi_choice">Multi Choice</string>
     <string name="title_activity_fragment">FragmentActivity</string>
     <string name="title_activity_drag_and_drop">DragAndDrop</string>
+    <string name="title_activity_copy_and_paste">CopyAndPaste</string>
 
 </resources>
