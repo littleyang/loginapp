@@ -1,9 +1,13 @@
 package com.example.yangyang.loginapp;
 
 import android.app.Activity;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class CopyAndPaste extends Activity {
@@ -32,5 +36,15 @@ public class CopyAndPaste extends Activity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void CopyAndPastData(View view){
+
+        // get clip board manager
+        ClipboardManager clipboardManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+
+        // create clip data object
+        ClipData clipData = ClipData.newPlainText("simple text","Hello, World!");
+
     }
 }
