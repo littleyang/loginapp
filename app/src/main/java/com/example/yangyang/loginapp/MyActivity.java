@@ -128,4 +128,12 @@ public class MyActivity extends Activity {
         startActivity(intent);
 
     }
+
+    // show drag and drop activity
+    public void showCopyAndPasteActivity(View view){
+
+        Intent intent = new Intent(this,CopyAndPaste.class);
+        startActivity(intent);
+
+    }
 }

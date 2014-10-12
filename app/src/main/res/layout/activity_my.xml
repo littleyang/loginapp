@@ -113,6 +113,15 @@
             android:layout_height="50dp"
             android:onClick="showDragAndDropActivity"/>
 
+        <Button
+            android:id="@+id/copy_and_paste"
+            android:text="copy and paste"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:onClick="showCopyAndPasteActivity"/>
+
+
     </LinearLayout>
 
 
