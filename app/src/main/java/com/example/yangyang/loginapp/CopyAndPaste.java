@@ -5,6 +5,7 @@ import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +13,9 @@ import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.EditText;
+
+import java.net.URI;
+import java.net.URL;
 
 
 public class CopyAndPaste extends Activity {
@@ -86,6 +90,32 @@ public class CopyAndPaste extends Activity {
 
         }
 
+
+    }
+
+    public void copyUrl(View view){
+
+        // String url message
+        String urlMessage = "";
+        // Url Text View
+        EditText urlMessageView = (EditText) findViewById(R.id.copy_url_input);
+        urlMessage = urlMessageView.getText().toString();
+
+        // pars uri
+        Uri copyUri = Uri.parse(urlMessage);
+
+        // get clipboard manager
+        ClipboardManager clipboardManager = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+        //set uri to clipboard manager
+        ClipData clipData = ClipData.newUri(getContentResolver(),"URI",copyUri);
+        clipboardManager.setPrimaryClip(clipData);
+
+
+    }
+
+    public void pasteUrl(View view){
+
+        
 
     }
 
