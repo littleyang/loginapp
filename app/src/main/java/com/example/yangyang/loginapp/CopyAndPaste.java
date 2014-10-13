@@ -46,5 +46,9 @@ public class CopyAndPaste extends Activity {
         // create clip data object
         ClipData clipData = ClipData.newPlainText("simple text","Hello, World!");
 
+        //set clip data to clipboard manager
+        clipboardManager.setPrimaryClip(clipData);
     }
+
+
 }
