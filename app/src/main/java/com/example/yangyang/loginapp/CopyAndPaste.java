@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.ClipData;
 import android.content.ClipDescription;
 import android.content.ClipboardManager;
+import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
@@ -115,7 +116,33 @@ public class CopyAndPaste extends Activity {
 
     public void pasteUrl(View view){
 
-        
+        // Gets a handle to the Clipboard Manager
+        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+
+        // Gets a content resolver instance
+        ContentResolver cr = getContentResolver();
+
+        ClipData clip = clipboard.getPrimaryClip();
+
+        if (clip != null) {
+
+            // Gets the first item from the clipboard data
+            ClipData.Item item = clip.getItemAt(0);
+
+            // Tries to get the item's contents as a URI
+            Uri pasteUri = item.getUri();
+
+            // If the clipboard contains a URI reference
+            if (pasteUri != null) {
+
+                // Is this a content URI?
+                String uriMimeType = cr.getType(pasteUri);
+
+                EditText uriViewText = (EditText)findViewById(R.id.copy_url_input);
+
+                uriViewText.setText(uriMimeType);
+            }
+        }
 
     }
 
