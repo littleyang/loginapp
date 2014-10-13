@@ -87,4 +87,44 @@
     </LinearLayout>
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/copy_intent"
+            android:text="Copy Intent"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="copyIntent"/>
+
+        <EditText
+            android:id="@+id/copy_intent_input"
+            android:padding="5dp"
+            android:hint="@string/copy_message"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/paste_intent"
+            android:text="Paste intent"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="pasteIntent"/>
+
+        <EditText
+            android:id="@+id/pasted_intent_input"
+            android:padding="5dp"
+            android:hint="@string/pasted_message"
+            android:layout_width="match_parent"
+            android:layout_height="45dp" />
+
+    </LinearLayout>
+
+
+
 </LinearLayout>

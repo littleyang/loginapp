@@ -146,5 +146,15 @@ public class CopyAndPaste extends Activity {
 
     }
 
+    public void copyIntent(View view){
+
+
+    }
+
+    public  void pasteIntent(View view){
+
+        
+    }
+
 
 }
