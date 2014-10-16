@@ -58,6 +58,10 @@
             android:name=".CopyAndPaste"
             android:label="@string/title_activity_copy_and_paste" >
         </activity>
+        <activity
+            android:name=".ime"
+            android:label="@string/title_activity_ime" >
+        </activity>
     </application>
 
 </manifest>

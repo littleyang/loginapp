@@ -153,7 +153,7 @@ public class CopyAndPaste extends Activity {
 
     public  void pasteIntent(View view){
 
-        
+
     }
 
 
