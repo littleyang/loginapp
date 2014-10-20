@@ -124,6 +124,31 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/ime_action"
+            android:text="Ime Action"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:onClick="showImeActivity"/>
+
+        <Button
+            android:id="@+id/show_animation"
+            android:text="show animation"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:onClick="showAnimationActivity"/>
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
