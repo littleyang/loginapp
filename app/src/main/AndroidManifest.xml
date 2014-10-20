@@ -62,6 +62,10 @@
             android:name=".ime"
             android:label="@string/title_activity_ime" >
         </activity>
+        <activity
+            android:name=".ShowAnimation"
+            android:label="@string/title_activity_show_animation" >
+        </activity>
     </application>
 
 </manifest>
