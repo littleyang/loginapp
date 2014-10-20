@@ -141,7 +141,7 @@
 
         <Button
             android:id="@+id/show_animation"
-            android:text="show animation"
+            android:text="Show Animation"
             android:layout_width="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_height="50dp"

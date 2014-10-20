@@ -136,4 +136,16 @@ public class MyActivity extends Activity {
         startActivity(intent);
 
     }
+
+    public void showImeActivity(View view){
+        Intent intent = new Intent(this,ime.class);
+        startActivity(intent);
+
+    }
+
+    public void showAnimationActivity(View view){
+
+        
+
+    }
 }
