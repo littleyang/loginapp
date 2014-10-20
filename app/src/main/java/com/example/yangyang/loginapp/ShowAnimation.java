@@ -4,14 +4,32 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class ShowAnimation extends Activity {
+
+    // define all button and imagine
+    private Button translateButton = null;
+    private Button alphaButton = null;
+    private Button rotateButton = null;
+    private Button scaleButton = null;
+    private ImageView imageView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_animation);
+
+        // find buttons
+        translateButton = (Button) findViewById(R.id.translate_animation);
+        translateButton.setOnClickListener( new TranslateButtonOnClickListener());
+
+        alphaButton = (Button) findViewById(R.id.alpha_animation);
+        alphaButton.setOnClickListener(new AlphaAnimationListener());
     }
 
 
@@ -33,4 +51,20 @@ public class ShowAnimation extends Activity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    private class TranslateButtonOnClickListener implements View.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+
+        }
+    }
+
+    private class AlphaAnimationListener implements  View.OnClickListener{
+        @Override
+        public void onClick(View view) {
+            
+        }
+    }
+
 }
