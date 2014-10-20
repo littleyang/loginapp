@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.*;
 
 
@@ -145,7 +146,8 @@ public class MyActivity extends Activity {
 
     public void showAnimationActivity(View view){
 
-        
+        Intent intent = new Intent(this, ShowAnimation.class);
+        startActivity(intent);
 
     }
 }
