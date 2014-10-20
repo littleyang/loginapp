@@ -6,6 +6,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
+import android.view.animation.RotateAnimation;
+import android.view.animation.ScaleAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -30,6 +32,14 @@ public class ShowAnimation extends Activity {
 
         alphaButton = (Button) findViewById(R.id.alpha_animation);
         alphaButton.setOnClickListener(new AlphaAnimationListener());
+
+        rotateButton = (Button) findViewById(R.id.rotate_animation);
+        rotateButton.setOnClickListener(new RotateAnimationListener());
+
+        scaleButton = (Button) findViewById(R.id.scale_animation);
+        scaleButton.setOnClickListener(new ScaleAnimationListener());
+
+        imageView = (ImageView) findViewById(R.id.imageViewId);
     }
 
 
@@ -63,7 +73,22 @@ public class ShowAnimation extends Activity {
     private class AlphaAnimationListener implements  View.OnClickListener{
         @Override
         public void onClick(View view) {
-            
+
+        }
+    }
+
+    private class RotateAnimationListener implements  View.OnClickListener{
+
+        @Override
+        public void onClick(View view) {
+
+        }
+    }
+
+    private class ScaleAnimationListener implements View.OnClickListener{
+        @Override
+        public void onClick(View view) {
+
         }
     }
 
