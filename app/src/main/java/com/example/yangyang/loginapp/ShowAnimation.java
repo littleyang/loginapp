@@ -105,6 +105,16 @@ public class ShowAnimation extends Activity {
         @Override
         public void onClick(View view) {
 
+            AnimationSet animationSet = new AnimationSet(true);
+            RotateAnimation rotateAnimation = new RotateAnimation(
+                    0f,360f,
+                    Animation.RELATIVE_TO_PARENT,0.5f,
+                    Animation.RELATIVE_TO_PARENT,0.5f
+            );
+            animationSet.addAnimation(rotateAnimation);
+            animationSet.setDuration(1000);
+            animationSet.setFillAfter(true);
+
         }
     }
 
@@ -112,6 +122,16 @@ public class ShowAnimation extends Activity {
         @Override
         public void onClick(View view) {
 
+            AnimationSet animationSet = new AnimationSet(true);
+            ScaleAnimation scaleAnimation = new ScaleAnimation(
+                    0.5f,0.5f,
+                    0.5f,0.5f,
+                    1,0.5f,
+                    1,0.5f
+            );
+            animationSet.addAnimation(scaleAnimation);
+            animationSet.setDuration(1000);
+            animationSet.setFillAfter(true);
         }
     }
 
