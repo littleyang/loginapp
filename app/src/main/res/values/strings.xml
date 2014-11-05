@@ -65,4 +65,7 @@
     <string name="title_activity_show_animation">ShowAnimation</string>
     <string name="title_activity_search_acticity">SearchActicity</string>
 
+    <string name="search_hint">This is login app</string>
+    <string name="search_label">Search</string>
+
 </resources>
