@@ -8,7 +8,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MyActivity"
+            android:name="com.example.yangyang.loginapp.MyActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,44 +27,48 @@
             </activity>
         -->
         <activity
-            android:name=".Register"
+            android:name="com.example.yangyang.loginapp.Register"
             android:label="@string/title_activity_register" >
         </activity>
         <activity
-            android:name=".LoginSuccess"
+            android:name="com.example.yangyang.loginapp.LoginSuccess"
             android:label="@string/title_activity_login_success" >
         </activity>
         <activity
-            android:name=".RegisterSuccess"
+            android:name="com.example.yangyang.loginapp.RegisterSuccess"
             android:label="@string/title_activity_register_success" >
         </activity>
         <activity
-            android:name=".PopListView"
+            android:name="com.example.yangyang.loginapp.PopListView"
             android:label="@string/title_activity_list_view" >
         </activity>
         <activity
-            android:name=".FragmentActivity"
+            android:name="com.example.yangyang.loginapp.FragmentActivity"
             android:label="@string/title_activity_fragment"
-            android:parentActivityName=".MyActivity" >
+            android:parentActivityName="com.example.yangyang.loginapp.MyActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MyActivity" />
         </activity>
         <activity
-            android:name=".DragAndDrop"
+            android:name="com.example.yangyang.loginapp.DragAndDrop"
             android:label="@string/title_activity_drag_and_drop" >
         </activity>
         <activity
-            android:name=".CopyAndPaste"
+            android:name="com.example.yangyang.loginapp.CopyAndPaste"
             android:label="@string/title_activity_copy_and_paste" >
         </activity>
         <activity
-            android:name=".ime"
+            android:name="com.example.yangyang.loginapp.ime"
             android:label="@string/title_activity_ime" >
         </activity>
         <activity
-            android:name=".ShowAnimation"
+            android:name="com.example.yangyang.loginapp.ShowAnimation"
             android:label="@string/title_activity_show_animation" >
+        </activity>
+        <activity
+            android:name="com.example.yangyang.loginapp.SearchActicity"
+            android:label="@string/title_activity_search_acticity" >
         </activity>
     </application>
 

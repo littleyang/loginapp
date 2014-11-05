@@ -63,5 +63,6 @@
     <string name="pasted_message">pasted message</string>
     <string name="title_activity_ime">ime</string>
     <string name="title_activity_show_animation">ShowAnimation</string>
+    <string name="title_activity_search_acticity">SearchActicity</string>
 
 </resources>
