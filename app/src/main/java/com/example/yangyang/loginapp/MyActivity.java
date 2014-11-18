@@ -150,4 +150,9 @@ public class MyActivity extends Activity {
         startActivity(intent);
 
     }
+
+    public void showGsonActivity(View view){
+        Intent intent = new Intent(this,GsonActivity.class);
+        startActivity(intent);
+    }
 }

@@ -149,6 +149,25 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/show_gson_button"
+            android:text="Show Gson Activity"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:onClick="showGsonActivity"/>
+
+
+
+    </LinearLayout>
+
 
 
 </LinearLayout>
