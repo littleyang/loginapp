@@ -4,14 +4,39 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class Gson extends Activity {
+
+    private String singleGsonString = "{\"name\":\"test one\",\"age\":26}";
+    private String arrayGsonString = "[{\"name\":\"test two\",\"age\":27},{\"name\":\"test three\",\"age\":28}]";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gson);
+        Button singleButton = (Button) findViewById(R.id.single_gson);
+        singleButton.setOnClickListener(new SingleGsonOnClickListener());
+
+        Button arrayButton = (Button) findViewById(R.id.array_gson);
+        arrayButton.setOnClickListener(new ArrayGsonOnClickListener());
+
+    }
+
+    private class SingleGsonOnClickListener implements View.OnClickListener{
+        @Override
+        public void onClick(View view) {
+
+        }
+    }
+
+    private class ArrayGsonOnClickListener implements View.OnClickListener{
+        @Override
+        public void onClick(View view) {
+
+        }
     }
 
 
