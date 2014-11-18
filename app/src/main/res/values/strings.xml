@@ -67,5 +67,6 @@
     <string name="search_hint">This is login app</string>
     <string name="search_label">Search</string>
     <string name="title_activity_gson">Gson</string>
-
+    <string name="single_gson_text">Single Gson Test</string>
+    <string name="array_gson_text">Array Gson Test</string>
 </resources>
