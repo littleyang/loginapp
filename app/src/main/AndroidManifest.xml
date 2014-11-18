@@ -78,7 +78,7 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name="com.example.yangyang.loginapp.Gson"
+            android:name=".GsonActivity"
             android:label="@string/title_activity_gson" >
         </activity>
     </application>

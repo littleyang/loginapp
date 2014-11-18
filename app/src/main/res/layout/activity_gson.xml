@@ -5,7 +5,7 @@
     android:paddingRight="12dp"
     android:paddingTop="2dp"
     android:paddingBottom="2dp"
-    tools:context="com.example.yangyang.loginapp.Gson">
+    tools:context="com.example.yangyang.loginapp.GsonActivity">
 
     <LinearLayout
         android:orientation="vertical"

@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 
-public class Gson extends Activity {
+public class GsonActivity extends Activity {
 
     private String singleGsonString = "{\"name\":\"test one\",\"age\":26}";
     private String arrayGsonString = "[{\"name\":\"test two\",\"age\":27},{\"name\":\"test three\",\"age\":28}]";
@@ -29,13 +29,16 @@ public class Gson extends Activity {
         @Override
         public void onClick(View view) {
 
+            GsonUtil util = new GsonUtil();
+            util.parsonSingleGsonObject(singleGsonString);
         }
     }
 
     private class ArrayGsonOnClickListener implements View.OnClickListener{
         @Override
         public void onClick(View view) {
-
+            GsonUtil util = new GsonUtil();
+            util.parsonArrayGsonObject(arrayGsonString);
         }
     }
 
